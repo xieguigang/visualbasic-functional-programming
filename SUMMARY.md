@@ -3,7 +3,7 @@
 ## Overview
 
 * [My Awesome API](README.md)
-* \[sdk\]\(./index.md\)
+* [sdk index](/index.md)
 
 ## Methods
 
