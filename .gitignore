@@ -21,4 +21,7 @@ obj/
 *.dll
 *.pdb
 
+
+.user
+
 packages/
