@@ -26,4 +26,7 @@ obj/
 *.tmp
 *.temp
 
+
+.user
+
 packages/
