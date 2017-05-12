@@ -3,7 +3,7 @@
 ## Overview
 
 * [My Awesome API](README.md)
-* [sdk index](/index.md)
+* [using_module](/using_module.md)
 
 ## Methods
 
