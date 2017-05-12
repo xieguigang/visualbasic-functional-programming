@@ -20,5 +20,10 @@ obj/
 *.exe
 *.dll
 *.pdb
+*.suo
+*.cache
+*.lib
+*.tmp
+*.temp
 
 packages/
