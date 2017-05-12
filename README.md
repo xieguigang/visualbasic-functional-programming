@@ -1,3 +1,10 @@
-# My Awesome API
+## Powerful feature
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+These language feature makes a powerful supports for the functional programming in visualbasic language
+
++ ``Module``
++ ``Extension Method``
++ ``Lambda Expression``
++ ``Generic``
++ ``Operator Overrides``
++ ``Linq & Parallel``
