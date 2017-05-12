@@ -14,3 +14,11 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+packages/
