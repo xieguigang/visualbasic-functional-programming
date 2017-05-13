@@ -30,3 +30,6 @@ obj/
 .user
 
 packages/
+*.sqlite
+*.sqlite-journal
+/.vs/slnx.sqlite-journal
