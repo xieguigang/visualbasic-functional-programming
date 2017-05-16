@@ -1,8 +1,9 @@
 # Summary
 
 * [Introductions](README.md)
+   * [Hello, FP](./what_is_FP.md)
 
-## Language Features for FP
+## FP Features
 
 1. [Using VisualBasic standard Module](./1.using_module/README.md)
 2. [Extension Method &amp; Caller Chain](./2.using_extension/README.md)
@@ -13,6 +14,6 @@
 
 ## Appendix
 
-1. DataFrame Object In VisualBasic
-2. VisualBasic CodeStyle guidline
+1. [DataFrame Object In VisualBasic](./Appendix/dataframe.md)
+2. [VisualBasic CodeStyle guidline](./Appendix/codestyle.md)
 3. [Using Anonymous Variable In VisualBasic](./Appendix/anonymous_variable.md)
