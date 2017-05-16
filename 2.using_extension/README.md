@@ -17,7 +17,7 @@ And you can also does this pipeline in VisualBasic using extension method, like:
 ' of the string result
 Dim s$ = foo().Replace("foo", "bar").Capitalize()
 
-<Extension> Function foo$()
+Function foo$()
 End Function
 
 <Extension> Function Capitalize$(s$)
