@@ -1,5 +1,7 @@
 {
-    "plugins": [ "theme-api" ],
+	"title" : "Functional Programming In VisualBasic",
+	"author" : "xie.guigang@scibasic.cool",
+    "plugins": [ "theme-api", "katex" , "-sharing", "mermaid", "toggle-chapters"],
     "pluginsConfig": {
         "theme-api": {
             "languages": [
@@ -14,5 +16,8 @@
                 }
             ]
         }
-    }
+    },
+	"styles": {
+		"website": "assets/continuum/cms.css"
+	}
 }
