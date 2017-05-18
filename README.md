@@ -19,6 +19,6 @@ These language feature makes a powerful supports for the functional programming 
 
 --------
 
-[^1]: https://en.wikipedia.org/wiki/Functional_programming
-[^2]: https://www.ibm.com/developerworks/cn/java/j-ft1/index.html
-[^3]: https://www.ibm.com/developerworks/cn/java/j-ft20/
+[[^1]]: https://en.wikipedia.org/wiki/Functional_programming
+[[^2]]: https://www.ibm.com/developerworks/cn/java/j-ft1/index.html
+[[^3]]: https://www.ibm.com/developerworks/cn/java/j-ft20/
