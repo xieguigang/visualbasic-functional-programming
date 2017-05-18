@@ -1,85 +1,18 @@
-## What is functional programming?
+![](./cover.jpg)
 
-### Imperative programming example
+### About this book
+The series of articles in this book is designed to adjust your way of thinking to functional thinking, so that you can think about common problems in a new perspective and improve your daily coding work. This series describes the concept of functional programming, the framework of functional programming running in the ``VisualBasic`` language, functional programming languages running on the ``CLR``, and some directions for the future of language design. This series is primarily geared towards understanding the way ``VisualBasic`` and its abstract tiers work, but developers who lack experience in functional language use.
 
-```vbnet
-Dim result As New List(Of Task)
+> In computer science, functional programming is a programming paradigm—a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.[^1]
 
-' Where Select
-For Each task As Task In "smrucc-cloud".task_pool()
-    If TIMESTAMPDIFF(Unit.HOUR, task.time_complete, now()) <= 24 Then
-        result += task
-    End If
-Next
+A Metaphor picked from IBM developerworks
 
-' Order result using simple bubble sort
-For i% = 0 To result.Count - 1
-    For j% = i To result.Count - 1
-        If result(i).uid > result(j).uid Then
-            Call result.Swap(i, j)
-        End If
-    Next
-Next
-
-' Take 10
-Dim out As New List(Of Task)
-
-For i% = 0 To 9
-    If i < result.Count Then
-        out += result(i)
-    End If
-Next
-```
-
-I'm trying to make this normal visualbasic code as short as enough, but it is still have nearly 20 lines of the code.
-
-### FP examples
-
-The FP language that we most frequent used is the SQL language,
-
-###### SQL
-
-MySQL example for implements the functional of the Imperative programming example code:
-
-```SQL
-SELECT *
-FROM `smrucc-cloud`.task_pool
-WHERE TIMESTAMPDIFF(HOUR, time_complete, now()) <= 24
-ORDER BY uid ASC
-LIMIT 10;
-```
-
-###### LINQ(VisualBasic)
-
-This visualbasic LINQ code provides the same function as the example SQL it does:
-
-```vbnet
-From task As Task IN "smrucc-cloud".task_pool()
-LET time_complete As Date = task.time_complete
-WHERE TIMESTAMPDIFF(Unit.HOUR, time_complete, now()) <= 24
-SELECT task
-Order By task.uid Ascending
-Take 10
-```
-
-###### FP VisualBasic
-
-In another way using LINQ caller chain:
-
-```vbnet
-Dim result As Task() =
-    "smrucc-cloud".task_pool()
-    .Where(Function(task) TIMESTAMPDIFF(Unit.HOUR, task.time_complete, now()) <= 24)
-    .OrderBy(Function(task) task.uid)
-    .Take(10)
-    .ToArray
-```
-
-From the example that we could learn that the FP style programming is 
+假如您是位伐木工人，如果您拥有最好的斧子，那您将会是林场中最能干的伐木工人。忽然有一天，有人向您展示并推荐一个新型伐木工具，电锯。这个销售人员很善于推销，于是您购买了电锯，但不知道如何使用。于是您就参照以前的模式来用，举起电锯用力地挥向树木。您很快就会得出结论，电锯这种新工具只不过是一种时尚，最后还是改用斧子来砍树。这时，有人过来告诉您如何正确使用电锯。
+您可以参考这个故事，但是要把电锯 替换为函数式编程。这是个全新的编程范式，并不像学习一门新语言那么简单。毕竟，语言语法只是细节问题。难点在于学习不同的思维 方式。这就是我的切入点 — 电锯使用者与函数式程序员。[^2]
 
 ## Powerful feature
 
-These language feature makes a powerful supports for the functional programming in visualbasic language
+These language feature makes a powerful supports for the functional programming in VisualBasic language, and here I want to talking about the FP style in VisualBasic from these language features:
 
 1. ``Module``
 2. ``Extension Method``
@@ -87,3 +20,10 @@ These language feature makes a powerful supports for the functional programming 
 4. ``Generic``
 5. ``Operator Overrides``
 6. ``Linq & Parallel``
+
+
+--------
+
+[^1]: https://en.wikipedia.org/wiki/Functional_programming
+[^2]: https://www.ibm.com/developerworks/cn/java/j-ft1/index.html
+[^3]: https://www.ibm.com/developerworks/cn/java/j-ft20/
