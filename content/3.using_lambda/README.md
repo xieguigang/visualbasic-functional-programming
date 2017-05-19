@@ -41,8 +41,12 @@ Dim value = func(input)
 ```vbnet
 Public Class Foo
 
-    Public ReadOnly Add As Func(Of Integer, Integer, Integer) = Function(x%, y%) x + y
-    Public ReadOnly Multiply As Func(Of Integer, Integer, Integer) = Function(x%, y%) x * y
+    Public ReadOnly Add As Func(Of Integer, Integer, Integer) = Function(x%, y%) 
+        Return x + y
+    End Function
+    Public ReadOnly Multiply As Func(Of Integer, Integer, Integer) = Function(x%, y%) 
+        Return x * y
+    End Function
 
 End Class
 ```
