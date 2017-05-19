@@ -1,18 +1,10 @@
 {
-    "plugins": [ "theme-api" ],
+	"title" : "Functional Programming In VisualBasic",
+	"author" : "xie.guigang@scibasic.cool",
+    "plugins": [ "theme-api", "katex" , "-sharing", "mermaid", "toggle-chapters"],
     "pluginsConfig": {
-        "theme-api": {
-            "languages": [
-                {
-                    "lang": "js",
-                    "name": "JavaScript",
-                    "default": true
-                },
-                {
-                    "lang": "go",
-                    "name": "Go"
-                }
-            ]
-        }
-    }
+    },
+	"styles": {
+		"website": "assets/continuum/cms.css"
+	}
 }
