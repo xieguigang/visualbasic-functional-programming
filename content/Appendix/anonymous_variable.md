@@ -22,3 +22,12 @@ title   = tmpVar.TryGetValue("task.title")
 describ = tmpVar.TryGetValue("task.describ")
 email   = tmpVar.TryGetValue("task.email")
 ```
+
+```vbnet
+Dim contributions As Dictionary(Of Date, Integer)
+Dim oneYear$
+
+With contributions.Keys.OrderBy(Function(day) day).ToArray
+    oneYear = $"{ .First.ToString("MMM dd, yyyy")} - { .Last.ToString("MMM dd, yyyy")}"
+End With
+```
