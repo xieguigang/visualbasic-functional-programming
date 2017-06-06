@@ -31,3 +31,15 @@ With contributions.Keys.OrderBy(Function(day) day).ToArray
     oneYear = $"{ .First.ToString("MMM dd, yyyy")} - { .Last.ToString("MMM dd, yyyy")}"
 End With
 ```
+
+```vbnet
+''' <summary>
+''' VisualBasic ``With`` source reference helper
+''' </summary>
+''' <typeparam name="T"></typeparam>
+''' <param name="x"></param>
+''' <returns></returns>
+<Extension> Public Function ref(Of T)(x As T) As T
+    Return x
+End Function
+```
