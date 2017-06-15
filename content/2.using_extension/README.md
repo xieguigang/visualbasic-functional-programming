@@ -23,3 +23,6 @@ End Function
 <Extension> Function Capitalize$(s$)
 End Function
 ```
+
+## Linq pipeline(Parallel computing)
+
