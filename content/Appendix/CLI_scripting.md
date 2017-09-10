@@ -13,7 +13,27 @@
 
 ##  1. <a name='ColorDesignerAPI'></a>Color Designer API
 
+It supports ``ColorBrewer``
+
 ##  2. <a name='QuantileSelector'></a>Quantile Selector
+
+There are three quantity selector for the CLI scripting: ``quantile``, ``quartile`` and ``select n``
+
+### quantile
+
+1. ``quantile:percentage%`` means takes all of the objects from the source sequence which its quantity value is greater than the total percentage% quantile.
+2. ``quantile:value`` means takes all off the objects from the source sequence which its quantity value is greater than the total quantile value x.
+
+### quartile
+
+1. Q1
+2. Q2
+3. Q3
+
+### select n
+
+1. ``asc:n`` means order the source sequence by its quantity value and then take the first n objects
+2. ``desc:n`` means order descding the source sequence by its quantity value and then take the top n objects. 
 
 ##  3. <a name='CTypeDynamics'></a>CTypeDynamics
 
