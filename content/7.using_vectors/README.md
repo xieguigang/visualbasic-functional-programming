@@ -73,7 +73,7 @@ Dim avg# = Average(array(array.success).value)
 
 Using the VectorShadows language feature from VB.NET is supper easy and brief, right? 
 
-### Compare VB.NEt and R
+### Compare VB.NET and R
 
 ```vbnet
 Dim avg# = Average(array(array.success).value)
@@ -82,9 +82,9 @@ Dim avg# = Average(array(array.success).value)
 decomposing steps in VB.NET:
 
 ```vbnet
-Dim success = array.success ' Where condiction
-Dim subset = array(success) ' row selector
-Dim values = subset.value   ' column projection
+Dim success = array.success  ' Where condiction
+Dim subset  = array(success) ' row selector
+Dim values  = subset.value   ' column projection
 ```
 
 decomposing steps in R language:
@@ -95,12 +95,15 @@ decomposing steps in R language:
 # avg <- mean(array[array[, "success"], "value"])
 
 success <- array[, "success"] # Where condiction
-subset <- array[success, ] # row selector
-values <- subset[, "value"]  # column projection
+subset  <- array[success, ]   # row selector
+values  <- subset[, "value"]  # column projection
 ```
 
-And here is how you can do in another functional programming language, SQL:
+The operation ``object[, "name"]`` is a kind of field project on R dataframe, which is similar to the ``DotProperty`` project in VisualBasic. The expression ``array[, "success"]`` in R language, project the dataframe object ``array`` as a boolean vector from its ``success`` column. This corresponding projection operation in VisualBasic language is the ``Vector DotProperty`` project, which is resulted the same output as the field projection in R language. For example, the ``array.success`` project the vector object ``array`` as a ``Boolean`` vector through the ``success`` property in the vector's base element type.
+
+And here is how you can do in another functional programming language, SQL language:
 
 ```SQL
 SELECT AVG(`value`) FROM array WHERE `success`;
 ```
+
