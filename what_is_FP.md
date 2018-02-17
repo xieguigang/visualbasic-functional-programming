@@ -102,3 +102,8 @@ For Each task As Task In "smrucc-cloud".task_pool()
     End If
 Next
 ```
+
+
+```vbnet
+Dim fib As Func(Of Integer) = Function(n) If(n <= 1, n, fib(n - 1) + fib(n - 2))
+```
