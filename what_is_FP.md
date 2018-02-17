@@ -2,6 +2,8 @@
 
 ### Imperative programming example
 
+进行指令式编程的时候需要为你的程序精确的制定出动作指令：
+
 ```vbnet
 Dim result As New List(Of Task)
 
@@ -77,6 +79,17 @@ Dim result As Task() =
 
 From the example that we could learn that the FP style programming is 
 
+总结：
+
+函数式编程和VB传统的指令式编程的最大的区别在于表达式的广泛应用：传统的指令式编程需要一个单词一个单词的精确制定程序需要完成的工作，而函数式编程则更加倾向于在一个描述性的框架之下放入需要完成的工作的函数表达式来构成一个完整的执行程序。在VB.NET之中，这种描述性的程序框架是构建于Linq表达式和函数拓展上面的。
+
+函数式编程和指令式编程的另外一个在代码上面的最主要的区别就是在对待数据序列上面，传统的指令式编程运用了大量的For和If等关键词。
+
+函数式编程相较于指令式编程的优点有：
+
+1. 代码复用
+2. 结果一致性
+
 ## Hello Functional Programming
 
 1. We just describ how to complete the job in functional programming, instead of giving the computer the complete commands
@@ -105,5 +118,5 @@ Next
 
 
 ```vbnet
-Dim fib As Func(Of Integer) = Function(n) If(n <= 1, n, fib(n - 1) + fib(n - 2))
+Dim fib As Func(Of Integer, Integer) = Function(n) If(n <= 1, n, fib(n - 1) + fib(n - 2))
 ```
