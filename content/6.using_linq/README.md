@@ -23,3 +23,4 @@ You can using ``WithDegreeOfParallelism(Integer)`` for specific the threads numb
 + First/Last 取序列的第一个或者最后一个元素
 + Take/Skip 取前n个元素或者跳过前n个元素
 + AsParallel 使用并行计算架构
+
