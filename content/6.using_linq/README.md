@@ -13,3 +13,13 @@ As we all known that the SQL language is a kind of functional programming langua
 ### Using PLinq(Threading technology)
  
 You can using ``WithDegreeOfParallelism(Integer)`` for specific the threads number that your PLinq used.
+
+
+
+常用的Linq函数有：
+
++ Select 数据投影
++ OrderBy/OrderByDesciding 排序
++ First/Last 取序列的第一个或者最后一个元素
++ Take/Skip 取前n个元素或者跳过前n个元素
++ AsParallel 使用并行计算架构
