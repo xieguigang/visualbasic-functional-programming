@@ -34,3 +34,4 @@ packages/
 *.sqlite-journal
 /.vs/slnx.sqlite-journal
 /code/.vs/CodeExample/v15/sqlite3/storage.ide
+/code/.vs/examples/v15/Server/sqlite3
