@@ -90,6 +90,14 @@ From the example that we could learn that the FP style programming is
 1. 代码复用
 2. 结果一致性
 
+
+为了保持结果的一致性，函数需要做到与外界尽量少的交互，一个优秀的函数，应该是只通过函数参数来获取外界输入，只通过Return返回来对外界进行输出的。为了做到尽量少的外界交互，你的函数之中应当不可以引用模块变量，函数的参数应该尽量是值类型，而非内存的引用指针，不可以存在对文件系统的读取操作，也应该尽量删去对文件系统的写入操作的代码。
+
+对于传统的面向对象的编程而言，由于VB之中的对象是一种内存地址引用的类型，所以假若使用对象的话，在函数的运行的期间，程序之中的其他的地方的多线程代码可能会修改对象引用的内容，例如可能会修改属性值，这将会导致即使你的函数拥有一致的参数输入，但是由于执行期间其他的线程对对象的内容作出了修改，这将会导致函数产生不一样的输出。因为传统的面向对象的编程不利于并行化，而且也不利于科学计算之中所要求的一致性。
+
+目前的科学计算程序大部分都是采用与外界最小交互的函数式编程模型
+
+
 ## Hello Functional Programming
 
 1. We just describ how to complete the job in functional programming, instead of giving the computer the complete commands
