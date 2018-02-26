@@ -132,5 +132,5 @@ Dim fib As Func(Of Integer, Integer) = Function(n) If(n <= 1, n, fib(n - 1) + fi
 但是我更加希望能够使用下面的更加接近自然语言式的编程风格
 
 ```vbnet
-Dim fib(~x) = (fix(x - 1) + fib(x - 2)) Or x As Default If x <= 1
+Dim fib(~x) = (fib(x - 1) + fib(x - 2)) Or x As Default If x <= 1
 ```
