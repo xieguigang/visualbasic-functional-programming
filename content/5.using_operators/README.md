@@ -1,5 +1,7 @@
 ## Available Operators in VisualBasic
 
+在VB程序之中使用操作符可以使你的程序代码尽可能的言简意赅，相较于使用英文单词方式的函数调用，一些比较容易理解的操作可以重构为同义的操作符将会大大增加代码的可读性。因为VB代码的风格主要是面向自然语言的，你可以尽量使用一些英文单词的操作符或者数学运算符来将你的代码公式化
+
 ### VB Exclusive operators
 
 |Operator|Description                       |

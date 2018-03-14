@@ -1,5 +1,7 @@
 ![](./cover.jpg)
 
+# Play With sciBASIC
+
 ## About this book
 The series of articles in this book is designed to adjust your way of thinking to functional thinking, so that you can think about common problems in a new perspective and improve your daily coding work. This series describes the concept of functional programming, the framework of functional programming running in the ``VisualBasic`` language, functional programming languages running on the ``CLR``, and some directions for the future of language design. This series is primarily geared towards understanding the way ``VisualBasic`` and its abstract tiers work, but developers who lack experience in functional language use.
 

@@ -43,3 +43,19 @@ End With
     Return x
 End Function
 ```
+
+### With Default Value
+
+You can combine the ``With`` anonymous variable with the VB.NET default value syntax:
+
+```vbnet
+Function(Optional out As StreamWriter)
+
+    ' Output the content to a specific output stream or just print on the console 
+    ' if the output stream is not presented.
+    With out Or New StreamWriter(Console.OpenStandardOutput).AsDefault
+        ' ...
+    End With
+
+End Function
+```
